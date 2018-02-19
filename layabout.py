@@ -15,7 +15,7 @@ from websocket import WebSocketConnectionClosedException
 
 __author__ = 'Reilly Tucker Siemens'
 __email__ = 'reilly@tuckersiemens.com'
-__version__ = '1.0.0b'
+__version__ = '1.0.0b1'
 
 # Private type alias for the complex type of the handlers defaultdict.
 _Handlers = DefaultDict[str, List[Tuple[Callable, dict]]]
@@ -277,7 +277,9 @@ class Layabout:
             time.sleep(interval)
 
 
-def _forever(events: List[dict]) -> bool:  # pragma: no cover
+# TODO: Consider Intersphinx for the Slack API:
+# https://python-slackclient.readthedocs.io/en/latest/
+def _forever(events: List[Dict[str, Any]]) -> bool:  # pragma: no cover
     """ Run Layabout in an infinite loop. """
     return True
 

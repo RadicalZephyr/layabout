@@ -1,5 +1,5 @@
-Contributing to this project
-============================
+Contributing Guidelines
+=======================
 
 Please follow these guidelines for contributing to this project.
 
